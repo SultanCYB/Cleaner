@@ -1,10 +1,11 @@
 def cleaner(clean: list):
     ''' for removing duplicated elemnts plus the original duplicated element from the list'''
+    if list(set(clean)) != clean:
+        
+        for i in clean[:]:
+            if clean.count(i) != 1:
 
-    for i in clean:
-        if clean.count(i) != 1:
-
-            for s in range(clean.count(i)):
-                clean.remove(i)
+                for s in range(clean.count(i)):
+                    clean.remove(i)
 
     return clean
