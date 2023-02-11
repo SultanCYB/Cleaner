@@ -1,5 +1,5 @@
 def cleaner(clean: list):
-    ''' for removing duplicated elemnts plus the original duplicated element'''
+    ''' for removing duplicated elemnts plus the original duplicated element from the list'''
 
     for i in clean:
         if clean.count(i) != 1:
